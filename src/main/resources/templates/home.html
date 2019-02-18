@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      th:lang="${lang}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="distsys.com distribution integration for autoparts">
+    <meta name="author" content="distsys.com">
+    <title th:text="#{home.title}">Distsys - sistema de distribuição de peças.</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/heroic-features.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">distsys.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" th:text="#{about}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard" th:text="#{dashboard}">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" th:text="#{services}">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" th:text="#{contact}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+		<video class="jumbotronvideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="/mov/5483243-preview.mp4" type="video/mp4">
+		</video>
+        <h1 class="display-3">A Warm Welcome!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+      </header>
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/empresarioresultado-min.jpg" alt="Empresario com resultado">
+            <div class="card-body">
+              <h4 class="card-title">Tenha mais resultados</h4>
+              <p class="card-text">Venda o material que está parado no seu estoque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" th:href="@{/hello}" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+			<img class="card-img-top" th:src="@{/img/aumentandosatisfacao-min.jpg}" src="/img/aumentandosatisfacao-min.jpg" alt="Aumente a satisfação">
+            <div class="card-body">
+              <h4 class="card-title">Aumente a satisfação.</h4>
+              <p class="card-text">Encontrando os produtos para os clientes você irá aumentar a satisfação destes e tornar-se um fornecedor especial.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" th:href="@{/hello}" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/vendaclientesatisfeito-min.jpg" alt="Clientes Satisfeitos">
+            <div class="card-body">
+              <h4 class="card-title">Fidelize clientes</h4>
+              <p class="card-text">Com o aumento da satisfação dos seus clientes eles serão mais fiéis lhe trazendo mais resultados.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" th:href="@{/hello}" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/antigaspreciosidades-min.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Encontre peças difíceis.</h4>
+              <p class="card-text">Tenha acesso ao estoque dos parceiros e encontre o produto que você imaginou que jamais poderia encontrar novamente.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" th:href="@{/hello}" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; distsys.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
